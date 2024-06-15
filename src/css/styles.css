@@ -141,3 +141,26 @@ letter-spacing: 0.04em;
 background-color: #4e75ff;
 border: transparent;
 }
+button[type="submit"]:hover {
+  background-color: #6c8cff;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  row-gap: 24px;
+  
+}
+
+.photo-card {
+  width: calc((100% - 48px) / 3);
+  max-width: 360px;
+ 
+  margin: 10px;
+}
+.info {
+  padding: 10px;
+  background-color: #ebf0f1;
+  border-radius: 0 0 8px 8px; 
+}

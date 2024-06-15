@@ -16,7 +16,7 @@ export function renderImages(images) {
         return `
             <div class="photo-card">
                 <a href="${largeImageURL}" class="gallery-link">
-                    <img src="${webformatURL}" alt="${tags}" loading="lazy"/>
+                    <img src="${webformatURL}" alt="${tags}"/>
                 </a>
                 <div class="info">
                     <p><b>Likes:</b> ${likes}</p>
@@ -40,5 +40,7 @@ export function showNotification(message) {
     iziToast.error({
         title: 'Error',
         message: message,
+        backgroundColor: '#ef4040',
+        theme: 'dark',
     });
 }

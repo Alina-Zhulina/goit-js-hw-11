@@ -8,7 +8,8 @@ export function getGallery(query) {
         q: query,
         image_type: 'photo',
         orientation: 'horizontal',
-        safesearch: true
+        safesearch: true,
+        per_page: 40
     });
 
     const url = `${BASE_URL}${END_POINT}?${params}`;
